@@ -1,0 +1,16 @@
+.btn{
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+    &__search{
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+        &:hover path{
+            fill: #7BC4DB;
+            transition: all 0.5s ease;
+        }
+    }
+}
