@@ -1,6 +1,5 @@
 import Swiper, { Autoplay, Keyboard, Navigation, Pagination } from 'swiper';
 
-
 export const swiperMain = () => {
     const swiper = new Swiper('.preview__swiper', {
       modules: [Navigation, Pagination, Autoplay],
