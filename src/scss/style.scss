@@ -22,11 +22,27 @@ body{
 }
 
 
+.top{
+    color: green;
+    border: 1px solid green;
+}
+
+.medium {
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.bad {
+    color: red;
+    border: 1px solid red;
+}
+
 
 @import '../../node_modules/swiper/swiper.scss';
 
 
 @import 'blocks/header';
 @import 'blocks/preview';
+@import './blocks/films';
 
 @import 'blocks/buttons';

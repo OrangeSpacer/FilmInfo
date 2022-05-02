@@ -14,7 +14,7 @@
                 <ul class="header__list">
                     <li class="header__item">
                         <a href="#" class="header__item-link">
-                            Movie
+                            Фильмы 
                         </a>
                     </li>
                     <li class="header__item">
@@ -47,6 +47,52 @@
                     <div class="swiper-wrapper preview__wrapper"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+            </div>
+        </section>
+        <section class="films">
+            <form class="films__form">
+                <select name="Type" id="type" class="films__form_select" required>
+                    <option value="FILM" class="films__form_option">
+                        Фильмы
+                    </option>
+                    <option value="TV_SHOW" class="films__form_option">
+                        ТВ-Шоу
+                    </option>
+                    <option value="TV_SERIES" class="films__form_option">
+                        ТВ-Сериалы
+                    </option>
+                    <option value="MINI_SERIES" class="films__form_option">
+                        Мини-Сериалы
+                    </option>
+                    <option value="ALL" class="films__form_option">
+                        Любой
+                    </option>
+                </select>
+                <input type="number" placeholder="минимальный рейтинг" min="0" max="10"  class="films__form_input films__rating_min">
+                <input type="number" placeholder="максимальный рейтинг" min="0" max="10" class="films__form_input films__rating_max">
+                <input type="number" placeholder="минимальный год" min="1945" class="films__form_input films__year_min">
+                <input type="number" placeholder="максимальный год" min="0" class="films__form_input films__year_max">
+                <!-- <input type="text" placeholder="imdb id"  class="films__form_input films__imdb_id"> -->
+                <button type="submit" class="btn btn__submit">
+                    найти
+                </button>
+            </form>
+            <div class="films__page">
+                <button class="btn btn__back">
+                    Назад
+                </button>
+                <button class="btn btn__next">
+                    Дальше
+                </button>
+            </div>
+            <div class="films__items"></div>
+            <div class="films__page">
+                <button class="btn btn__back">
+                    Назад
+                </button>
+                <button class="btn btn__next">
+                    Дальше
+                </button>
             </div>
         </section>
     </main>
