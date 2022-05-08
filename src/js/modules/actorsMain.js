@@ -8,7 +8,6 @@ export const actorsFilm = (id) => {
             }
         })
         const results = await respnse.json()
-        console.log(results)
         showActor(results)
     }
 

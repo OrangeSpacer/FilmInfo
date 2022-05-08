@@ -43,10 +43,7 @@ export const filtersFilm = () => {
             }
         })
         const results = await response.json()
-        console.log(results)
         showFiltersMovies(results)
-        // chnagePage(results)
-        console.log(url)
         modal()
     }
 

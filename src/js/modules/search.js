@@ -15,8 +15,6 @@ export const search = () => {
             }
         })
         const results = await response.json()
-        console.log(results)
-        console.log(url)
         showSearchMovies(results)
         modal()
     }
@@ -31,7 +29,6 @@ export const search = () => {
         elementsBlock.classList.add('films__items')
         container.append(elementsBlock)
         bodyElements.append(container)
-        console.log(data.pagesCount)
 
         data.films.forEach(item => {
             const movieItem = document.createElement('div')

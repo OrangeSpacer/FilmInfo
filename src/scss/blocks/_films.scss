@@ -3,6 +3,10 @@
     &__form{
         text-align: center;
         margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
         &_select{
             border-radius: 15px;
             padding: 5px;
@@ -18,9 +22,10 @@
         }
         &_input{
             font-size: 15px;
-            width: 250px;
+            width: 185px;
             border-radius: 15px;
             padding: 5px;
+            margin-top: 20px;
             text-align: center;
             transition: all 0.5s ease;
             &:not(:last-child){
@@ -35,12 +40,18 @@
     &__items{
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(4,auto);
+        grid-template-columns: repeat(auto-fill, 350px);
         justify-content: space-evenly;
         img{
             object-fit: cover;
             width: 300px;
             height: 450px;
+            transition: all 0.5s ease;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
         }
     }
     &__item{
@@ -57,7 +68,7 @@
     &__rating{
         position: absolute;
         top: -5px;
-        right: -10px;
+        right: 20px;
         padding: 6px;
         border-radius: 100%;
         background-color: black;

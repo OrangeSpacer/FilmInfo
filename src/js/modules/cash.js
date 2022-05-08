@@ -8,14 +8,11 @@ export const cashFilms = (id) => {
             }
         })
         const results = await response.json()
-        console.log(results.items[results.items.length-1])
-        cashContent(results)
     }
     cashInfo()
 
     function cashContent(data){
         let cashItem = document.querySelector('.modal__cash')
-        console.log(data.items)
         cashItem.innerHTML = ``
         if(data.items.length > 0){
             cashItem.innerHTML =

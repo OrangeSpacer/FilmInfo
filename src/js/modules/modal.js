@@ -18,10 +18,7 @@ export const modal = () => {
             }
         })
         const results = await response.json()
-        console.log(results)
         showModal(results)
-        console.log(results.nameRu)
-
     }
 
     filmsItem.forEach(item => {
