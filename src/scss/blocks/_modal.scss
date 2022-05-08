@@ -58,3 +58,30 @@
         display: none;
     }
 }
+
+
+@media screen and (max-width:550px){
+    .modal{
+        &__title{
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__descr{
+            width: 320px;
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__cash{
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__actors{
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

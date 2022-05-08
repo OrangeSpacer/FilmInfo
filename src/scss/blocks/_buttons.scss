@@ -72,4 +72,13 @@
             background-color: white;
         }
     }
+
+}
+
+@media screen and (max-width:550px){
+    .btn{
+        &__close{
+            right: 25px;
+        }
+    }
 }

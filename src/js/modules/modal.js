@@ -23,14 +23,16 @@ export const modal = () => {
 
     filmsItem.forEach(item => {
         item.addEventListener('click', () => {
-            modalItem.innerHTML = ``
-            modalItem.classList.remove('modal__hidden')
-            console.log(item)
-            modalInfo(item.dataset.id)
-            actorsFilm(item.dataset.id)
-            videoInfo(item.dataset.id)
-            cashFilms(item.dataset.id)
-            document.body.style.overflow='hidden'
+            setTimeout(() => {
+                modalItem.innerHTML = ``
+                modalItem.classList.remove('modal__hidden')
+                console.log(item)
+                modalInfo(item.dataset.id)
+                actorsFilm(item.dataset.id)
+                videoInfo(item.dataset.id)
+                cashFilms(item.dataset.id)
+                document.body.style.overflow='hidden'
+            },200)
         })
     })
 

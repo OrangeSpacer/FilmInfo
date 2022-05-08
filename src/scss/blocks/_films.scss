@@ -68,7 +68,7 @@
     &__rating{
         position: absolute;
         top: -5px;
-        right: 20px;
+        right: 40px;
         padding: 6px;
         border-radius: 100%;
         background-color: black;
@@ -79,4 +79,16 @@
         margin-bottom: 20px;
     }
 
+}
+
+
+@media screen and (max-width: 475px){
+    .films{
+        &__items{
+            grid-template-columns: repeat(auto-fill, 300px);
+        }
+        &__rating{
+            right: -7px;
+        }
+    }
 }

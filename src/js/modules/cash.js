@@ -8,8 +8,8 @@ export const cashFilms = (id) => {
             }
         })
         const results = await response.json()
+        cashContent(results)
     }
-    cashInfo()
 
     function cashContent(data){
         let cashItem = document.querySelector('.modal__cash')
@@ -23,4 +23,6 @@ export const cashFilms = (id) => {
             `
         }
     }
+
+    cashInfo()
 }
