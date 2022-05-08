@@ -43,7 +43,7 @@ export const topFilm = async (url,API_KEY,key) => {
             movieElement.setAttribute('data-id',`${movie.filmId}`)
             movieElement.innerHTML =
             `
-            <div class="preview__img">
+            <div class="preview__img films_info" data-id="${movie.filmId}">
                 <img src="${movie.posterUrl}" alt="poster">
             </div>
             <div class="preview__slide-info">

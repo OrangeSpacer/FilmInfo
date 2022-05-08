@@ -1,5 +1,6 @@
 import { backMainPage } from "./modules/back.js";
 import { filtersFilm } from "./modules/filtersfilm.js";
+import { modal } from "./modules/modal.js";
 import { search } from "./modules/search.js";
 import { swiperMain } from "./modules/swiperMain.js";
 import { test } from "./modules/test.js";
@@ -12,12 +13,11 @@ const topSreailUrl = 'https://kinopoiskapiunofficial.tech/api/v2.2/films?order=R
 
 
 window.onload = () => {
-    test('https://kinopoiskapiunofficial.tech/api/v2.2/films/premieres?year=2022&month=JUNE',API_KEY)
+    test('https://kinopoiskapiunofficial.tech/api/v2.2/films/435/videos',API_KEY)
     topFilm(topFilmUrl,API_KEY,'films')
-    // setTimeout(() => moneyFilm(topFilmUrl,API_KEY), 1000)
-    // setTimeout(() => actorsFilm(topFilmUrl,API_KEY),1000)
     filtersFilm()
     search()
     swiperMain()
     backMainPage()
+    modal()
 };

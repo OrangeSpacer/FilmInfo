@@ -1,3 +1,4 @@
+import { modal } from "./modal.js"
 import { raitingColor } from "./raiting.js"
 
 export const search = () => {
@@ -17,6 +18,7 @@ export const search = () => {
         console.log(results)
         console.log(url)
         showSearchMovies(results)
+        modal()
     }
 
     function showSearchMovies(data){
@@ -33,7 +35,7 @@ export const search = () => {
 
         data.films.forEach(item => {
             const movieItem = document.createElement('div')
-            movieItem.classList.add('films__item')
+            movieItem.classList.add('films__item','films_info')
             movieItem.setAttribute('data-id',`${item.filmId}`)
             movieItem.innerHTML =
             `

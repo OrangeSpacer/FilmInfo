@@ -1,3 +1,4 @@
+import { modal } from "./modal.js"
 import { raitingColor } from "./raiting.js"
 
 
@@ -46,6 +47,7 @@ export const filtersFilm = () => {
         showFiltersMovies(results)
         // chnagePage(results)
         console.log(url)
+        modal()
     }
 
 
@@ -61,7 +63,7 @@ export const filtersFilm = () => {
         elementsBlock.innerHTML = '';
         item.items.forEach(item => {
             let elementsMovies = document.createElement('div')
-            elementsMovies.classList.add('films__item')
+            elementsMovies.classList.add('films__item', 'films_info')
             elementsMovies.setAttribute('data-id',`${item.kinopoiskId}`)
             elementsMovies.innerHTML =
             `

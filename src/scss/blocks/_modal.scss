@@ -1,0 +1,60 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    background-color: rgba(0,0,0,.4);
+    cursor: pointer;
+    overflow: hidden;
+    &__content{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 15px;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,.7);
+        cursor: default;
+    }
+    &__video{
+        text-align: center;
+        margin-top: 35px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #7BC4DB;
+        transition: all 0.5s ease;
+        &:hover{
+            color: aqua;
+            transition: all 0.5s ease;
+        }
+    }
+    &__title{
+        font-size: 25px;
+        color: white;
+    }
+    &__descr{
+        padding-top: 25px;
+        width: 500px;
+        font-size: 20px;
+        color: white;
+    }
+    &__cash{
+        padding-top: 25px;
+        font-size:18px;
+        color: white;
+    }
+    &__actors{
+        padding-top: 25px;
+        font-size: 18px;
+        color: white;
+    }
+
+    &__active{
+        display: block;
+    }
+    &__hidden{
+        display: none;
+    }
+}
