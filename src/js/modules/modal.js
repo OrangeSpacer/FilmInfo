@@ -26,7 +26,6 @@ export const modal = () => {
             setTimeout(() => {
                 modalItem.innerHTML = ``
                 modalItem.classList.remove('modal__hidden')
-                console.log(item)
                 modalInfo(item.dataset.id)
                 actorsFilm(item.dataset.id)
                 videoInfo(item.dataset.id)

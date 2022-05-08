@@ -18,7 +18,7 @@ export const videoInfo = (id) => {
         if (data.length > 0){
             videoBlock.innerHTML=
             `
-                <a href="${data[0].url}" class="modal__link" target="_blank">Посмотреть трейлер</a>
+                <a href="${data[0].url}" class="modal__link">Посмотреть трейлер</a>
             `
         }
     }
