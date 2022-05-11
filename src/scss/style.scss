@@ -37,6 +37,15 @@ body{
     border: 1px solid red;
 }
 
+.load{
+    position: absolute;
+    font-size: 18px;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+
 
 @import '../../node_modules/swiper/swiper.scss';
 

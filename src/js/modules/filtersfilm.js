@@ -14,7 +14,7 @@ export const filtersFilm = () => {
     let backBtn = document.querySelectorAll('.btn__back')
 
     let count = 1
-    // console.log(filmType)
+    
 
     function chnagePage(){
         nextBtn.forEach(item => {
@@ -34,7 +34,22 @@ export const filtersFilm = () => {
 
     }
 
+    function viewBtn(type){
+        nextBtn.forEach(itemNext => {
+            itemNext.style.display = type
+        })
+        backBtn.forEach(itemBack => {
+            itemBack.style.display = type
+        })
+    }
+
+    const loadObject = {
+        load : `<div class="load">Загрузка...</div>"`
+    }
+    
     async function chnageFilms(url){
+        viewBtn('none')
+        document.querySelector('.films__items').innerHTML = loadObject.load 
         const response = await fetch(url,{
             method : "GET",
             headers: {
@@ -56,7 +71,7 @@ export const filtersFilm = () => {
 
     function showFiltersMovies(item){
         let elementsBlock = document.querySelector('.films__items')
-
+        viewBtn('block')
         elementsBlock.innerHTML = '';
         item.items.forEach(item => {
             let elementsMovies = document.createElement('div')

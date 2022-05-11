@@ -38,6 +38,7 @@
         }
     }
     &__items{
+        position: relative;
         margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(auto-fill, 350px);
